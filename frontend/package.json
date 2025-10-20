@@ -5,9 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:network": "vite --host 0.0.0.0",
     "build": "vite build",
+    "build:prod": "vite build --mode production",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "lint:fix": "eslint . --ext js,jsx --fix",
+    "preview": "vite preview",
+    "preview:network": "vite preview --host 0.0.0.0",
+    "clean": "rm -rf dist node_modules/.vite"
   },
   "dependencies": {
     "react": "^18.2.0",
