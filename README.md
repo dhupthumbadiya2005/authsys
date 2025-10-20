@@ -1,11 +1,5 @@
 # AuthSys - WebAuthn Passwordless Authentication System
 
-A complete, production-ready passwordless authentication system using WebAuthn biometrics, built with FastAPI and React.
-
-![WebAuthn](https://img.shields.io/badge/WebAuthn-Enabled-green)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-blue)
-![React](https://img.shields.io/badge/React-18+-61DAFB)
-![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-green)
 
 ## 🚀 Features
 
@@ -332,100 +326,6 @@ COPY . .
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
 ```
 
-## 🧪 Testing
 
-### Manual Testing
-1. **Registration** - Test with different browsers
-2. **Login** - Verify biometric prompts work
-3. **Cross-browser** - Test Chrome, Safari, Firefox
-4. **Mobile** - Test on iOS/Android devices
-5. **Error handling** - Test network failures
-
-### Browser Compatibility
-- ✅ Chrome 67+
-- ✅ Safari 14+
-- ✅ Firefox 60+
-- ✅ Edge 18+
-- ✅ iOS Safari 14+
-- ✅ Android Chrome 70+
-
-## 🔍 Troubleshooting
-
-### Common Issues
-
-#### "WebAuthn not supported"
-- Use HTTPS or localhost
-- Update to modern browser
-- Enable biometrics in system settings
-
-#### "Challenge mismatch"
-- Clear browser data for localhost
-- Restart backend server
-- Check MongoDB connection
-
-#### "Origin mismatch"
-- Verify RP_ID matches domain
-- Check CORS configuration
-- Ensure consistent ports
-
-#### "Biometric prompt not showing"
-- Enable Touch ID/Face ID in settings
-- Try different browser
-- Check for browser permissions
-
-## 📊 Performance
-
-### Metrics
-- **Registration time**: ~2-3 seconds
-- **Login time**: ~1-2 seconds
-- **Database queries**: Optimized with indexes
-- **Memory usage**: Minimal with async operations
-- **Concurrent users**: Scales with MongoDB Atlas
-
-## 🔒 Security Considerations
-
-### Best Practices Implemented
-- ✅ No password storage
-- ✅ Cryptographic challenge verification
-- ✅ Origin validation
-- ✅ Secure credential storage
-- ✅ JWT token expiration
-- ✅ HTTPS enforcement (production)
-- ✅ Input validation and sanitization
-
-### Security Audit Checklist
-- [ ] Regular dependency updates
-- [ ] Security headers implementation
-- [ ] Rate limiting on endpoints
-- [ ] Logging and monitoring
-- [ ] Backup and recovery procedures
-
-## 🤝 Contributing
-
-1. **Fork** the repository
-2. **Create** feature branch (`git checkout -b feature/amazing-feature`)
-3. **Commit** changes (`git commit -m 'Add amazing feature'`)
-4. **Push** to branch (`git push origin feature/amazing-feature`)
-5. **Open** Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **WebAuthn Specification** - W3C and FIDO Alliance
-- **FastAPI** - Sebastian Ramirez and contributors
-- **React Team** - Meta and contributors
-- **MongoDB** - Database platform
-- **Tailwind CSS** - Utility-first CSS framework
-
-## 📞 Support
-
-- **Issues**: [GitHub Issues](https://github.com/yourusername/authsys/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/authsys/discussions)
-- **Email**: your.email@example.com
-
----
 
 **Built with ❤️ using WebAuthn, FastAPI, and React**
